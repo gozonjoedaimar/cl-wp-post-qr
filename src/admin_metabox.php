@@ -25,6 +25,12 @@ if ( ! function_exists( 'cl_post_qr_metabox' ) ) {
     */
    function cl_post_qr_metabox( $post ) 
    {
+      global $pagenow;
+      if ('post-new.php' == $pagenow) {
+         echo "<i>Save post to generate qr code.</i>";
+         return;
+      }
+
       $link = cl_get_qr_link($post->ID);
       ?><div id="cl_qr_metabox_content">
          <p>
