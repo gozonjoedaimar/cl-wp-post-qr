@@ -9,3 +9,5 @@ Author: Joedaimar G.
 require_once __DIR__ . '/vendor/autoload.php';
 
 require_once __DIR__ . '/src/qr_route.php';
+
+require_once __DIR__ . '/src/admin_metabox.php';

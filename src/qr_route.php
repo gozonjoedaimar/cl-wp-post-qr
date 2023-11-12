@@ -32,7 +32,7 @@ if ( ! function_exists('cl_qr_route') ) {
 
             // Build QR code
             $qr_generator = new Generator;
-            $qr = $qr_generator->size(200);
+            $qr = $qr_generator->size(254);
 
             if ($as_png) {
                $ext = "png";
